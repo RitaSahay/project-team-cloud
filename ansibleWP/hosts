@@ -1,0 +1,8 @@
+#Add the contents of this file to your ~/etc/ansible/hosts
+[appserver]
+20.211.22.211
+[appserver:vars]
+ansible_private_key_file=~/ansibleWP/.ssh/sshkey2.pem
+ansible_user=azureuser
+ansible_become=yes
+ansible_become_method=sudo
